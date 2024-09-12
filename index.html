@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Tampa Painters</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Pro Tampa Painters Logo">
+        <div class="logo">
+            <img src="logo.png" alt="Pro Tampa Painters Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <section id="home">
         <h1>Welcome to Pro Tampa Painters</h1>
-        <p>Your trusted painting company in Tampa.</p>
-        <img src="images/service1.jpg" alt="Painting Service">
-    </main>
+        <p>Your trusted partner for all painting needs.</p>
+        <img src="home-image.jpg" alt="Beautifully painted house">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Residential Painting</h3>
+            <p>Transform your home with our expert painting services.</p>
+        </div>
+        <div class="service">
+            <h3>Commercial Painting</h3>
+            <p>Professional painting solutions for your business.</p>
+        </div>
+        <div class="service">
+            <h3>Interior & Exterior</h3>
+            <p>Quality finishes for both interior and exterior surfaces.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Pro Tampa Painters has been serving the Tampa area for over a decade, providing top-notch painting services with a focus on quality and customer satisfaction.</p>
+        <img src="about-image.jpg" alt="Our team at work">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>© 2024 Pro Tampa Painters. All rights reserved.</p>
+        <p>&copy; 2023 Pro Tampa Painters. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
